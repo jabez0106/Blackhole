@@ -15,14 +15,14 @@ function draw() {
 class Blackhole {
   constructor() {
   }
-  
+
   display() {
     fill(0);
-    strokeWeight(20); 
+    strokeWeight(20);
     stroke('rgba(100,0,100,100)');
     translate(300,300)
   }
-  
+
   scaleBounce() {
     if (keyIsPressed === true) {
       let step = frameCount % 120;
@@ -32,5 +32,5 @@ class Blackhole {
       let step = frameCount % 20;
       applyMatrix(1 / step, 0, 0, 1 / step, 0, 0);
     }
-  } 
+  }
 }
